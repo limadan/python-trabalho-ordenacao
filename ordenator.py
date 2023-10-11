@@ -2,7 +2,7 @@ class Ordenator:
     def __init__(self):
         pass
     
-    def selecao(self, vetor):
+    def selecao(self, v, n):
         for i in range(1, n):
             min_index = i
             for j in range(i + 1, n + 1):
@@ -11,5 +11,7 @@ class Ordenator:
             x = v[min_index]
             v[min_index] = v[i]
             v[i] = x
-        return vetor
+
+        print(v[0].dados_da_musica['track_name'])
+        return v
         

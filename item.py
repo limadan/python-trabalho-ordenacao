@@ -4,5 +4,19 @@ class Item:
 
 
     def compara(self, other):
-        # Implemente sua lógica de comparação aqui
-        pass
+        self_musica = self.dados_da_musica['track_name']
+        other_musica = other.dados_da_musica['track_name']
+        if(self_musica==other_musica):
+            return 0
+        for i in range(len(self_musica)):
+            if(i==len(other_musica)):
+                return 1
+            elif self_musica[i]<other_musica[i]:
+                return -1
+            elif self_musica[i]>other_musica[i]:
+                return 1
+            elif self_musica[i]==other_musica[i]:
+                continue
+        return 0
+
+        

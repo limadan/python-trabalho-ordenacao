@@ -1,4 +1,7 @@
 from item import Item
+from ordenator import Ordenator
+
+
 arquivo = open("spotify-2023.csv", encoding='latin-1')
 chaves = arquivo.readline().split(",")
 hash_de_musica = {}
@@ -20,5 +23,8 @@ for linha in arquivo:
         hash_de_musica[chaves[i]] = dados_da_musica[i] 
     itemArray = Item(hash_de_musica)
     Musicas.append(itemArray)
+
+ordenator = Ordenator()
+Musicas = ordenator.selecao(Musicas, len(Musicas)-1)
 
 print(Musicas[0])
