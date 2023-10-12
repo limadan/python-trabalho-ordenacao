@@ -4,19 +4,14 @@ class Item:
 
 
     def compara(self, other):
-        self_musica = self.dados_da_musica['track_name']
-        other_musica = other.dados_da_musica['track_name']
-        if(self_musica==other_musica):
+        string1 = self.dados_da_musica['track_name'].lower()
+        string2 = other.dados_da_musica['track_name'].lower()
+
+        if string1 < string2:
+            return -1
+        elif string2 < string1:
+            return 1
+        else:
             return 0
-        for i in range(len(self_musica)):
-            if(i==len(other_musica)):
-                return 1
-            elif self_musica[i]<other_musica[i]:
-                return -1
-            elif self_musica[i]>other_musica[i]:
-                return 1
-            elif self_musica[i]==other_musica[i]:
-                continue
-        return 0
 
         
