@@ -3,9 +3,9 @@ class Item:
         self.dados_da_musica = hash_de_musica
 
 
-    def compara(self, other):
-        string1 = self.dados_da_musica['track_name'].lower()
-        string2 = other.dados_da_musica['track_name'].lower()
+    def compara(self, other, chave):
+        string1 = self.dados_da_musica[chave].lower()
+        string2 = other.dados_da_musica[chave].lower()
 
         if string1 < string2:
             return -1
