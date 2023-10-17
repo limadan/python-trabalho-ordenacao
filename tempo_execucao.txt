@@ -1,0 +1,16 @@
+Nome da musica por seleção
+Tempo de execução do programa: 0.4787254333496094 segundos
+Número de operações: 462682
+
+Nome da musica por inserção
+Tempo de execução do programa: 0.5116481781005859 segundos
+Número de operações: 1132658
+
+Nome do artista por seleção
+Tempo de execução do programa: 0.5335328578948975 segundos
+Número de operações: 462243
+
+Nome do artista por inserção
+Tempo de execução do programa: 0.599529504776001 segundos
+Número de operações: 1159853
+

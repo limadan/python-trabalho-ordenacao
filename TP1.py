@@ -1,5 +1,10 @@
 from item import Item
 from ordenator import Ordenator
+import time
+
+def print_elementos(numero_elementos, chave):
+    for i in range(numero_elementos):
+        print(vetor_musicas[i].dados_da_musica[chave])
 
 def split_dados(linha):
     contador_aspas = 0
@@ -23,7 +28,7 @@ def split_dados(linha):
 arquivo = open("spotify-2023.csv", encoding='latin-1')
 chaves = arquivo.readline().split(",")
 hash_de_musica = {}
-musicas_desordenadas = []
+vetor_musicas = []
 for linha in arquivo:
     dados_da_musica = split_dados(linha)
     hash_de_musica = {}
@@ -31,20 +36,45 @@ for linha in arquivo:
     for i in range(23):
         hash_de_musica[chaves[i]] = dados_da_musica[i].replace('"', '')
     itemArray = Item(hash_de_musica)
-    musicas_desordenadas.append(itemArray)
+    vetor_musicas.append(itemArray)
+
 
 ordenator = Ordenator()
+print("=========Algoritmos de Ordenação==========")
+print("Qual opcao voce deseja ordenar?")
+print("1 - Nome da musica por seleção")
+print("2 - Nome da musica por inserção")
+print("3 - Nome do artista por seleção")
+print("4 - Nome do artista por inserção")
+opcao = int(input("Digite a Opção: "))
 
-musicas_selection_sort_track_name = ordenator.selecao(musicas_desordenadas, 'track_name')
-musicas_insertion_sort_track_name = ordenator.insercao(musicas_desordenadas, 'track_name')
+start_time = time.time()
+numero_operacoes = 0
+rotulo_txt = ""
+if(opcao==1):
+    rotulo_txt = "Nome da musica por seleção"
+    numero_operacoes = ordenator.selecao(vetor_musicas, 'track_name')
+    print_elementos(len(vetor_musicas),'track_name')
+elif(opcao==2):
+    rotulo_txt = "Nome da musica por inserção"
+    numero_operacoes = ordenator.insercao(vetor_musicas, 'track_name')
+    print_elementos(len(vetor_musicas),'track_name')
+elif(opcao==3):
+    rotulo_txt = "Nome do artista por seleção"
+    numero_operacoes = ordenator.selecao(vetor_musicas, 'artist(s)_name')
+    print_elementos(len(vetor_musicas),'artist(s)_name')
+elif(opcao==4):
+    rotulo_txt = "Nome do artista por inserção"
+    numero_operacoes = ordenator.insercao(vetor_musicas, 'artist(s)_name')
+    print_elementos(len(vetor_musicas),'artist(s)_name')
+else:
+    print("Entrada não identificada")
+end_time = time.time()
+tempo_corrido = end_time - start_time
 
-musicas_selection_sort_artist_name = ordenator.selecao(musicas_desordenadas, 'artist(s)_name')
-musicas_insertion_sort_artist_name = ordenator.insercao(musicas_desordenadas, 'artist(s)_name')
+arquivo_saida = "tempo_execucao.txt"
 
-string_ordenado = ""
-for i in range(10):
-    string_ordenado += musicas_selection_sort_track_name[i].dados_da_musica['track_name']
-    string_ordenado+=","
+with open(arquivo_saida, "a") as arquivo:
+    arquivo.write(f"{rotulo_txt}\nTempo de execução do programa: {tempo_corrido} segundos\nNúmero de operações: {numero_operacoes}\n\n")
 
-print(string_ordenado)
-
+print(f"{rotulo_txt}\nTempo de execução do programa: {tempo_corrido} segundos\nNúmero de operações: {numero_operacoes}")
