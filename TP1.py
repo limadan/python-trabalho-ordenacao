@@ -44,8 +44,18 @@ print("=========Algoritmos de Ordenação==========")
 print("Qual opcao voce deseja ordenar?")
 print("1 - Nome da musica por seleção")
 print("2 - Nome da musica por inserção")
-print("3 - Nome do artista por seleção")
-print("4 - Nome do artista por inserção")
+print("3 - Nome da musica por bolha")
+print("4 - Nome da musica por shell sort")
+print("5 - Nome da musica por quick sort")
+print("6 - Nome da musica por heap sort")
+print("7 - Nome da musica por merge sort")
+print("8 - Nome do artista por seleção")
+print("9 - Nome do artista por inserção")
+print("10 - Nome do artista por bolha")
+print("11 - Nome do artista por shell sort")
+print("12 - Nome do artista por quick sort")
+print("13 - Nome do artista por heap sort")
+print("14 - Nome do artista por merge sort")
 opcao = int(input("Digite a Opção: "))
 
 start_time = time.time()
@@ -60,13 +70,36 @@ elif(opcao==2):
     numero_operacoes = ordenator.insercao(vetor_musicas, 'track_name')
     print_elementos(len(vetor_musicas),'track_name')
 elif(opcao==3):
+    pass
+elif(opcao==4):
+    pass
+elif(opcao==5):
+    pass
+elif(opcao==6):
+    pass
+elif(opcao==7):
+    pass
+elif(opcao==8):
     rotulo_txt = "Nome do artista por seleção"
     numero_operacoes = ordenator.selecao(vetor_musicas, 'artist(s)_name')
     print_elementos(len(vetor_musicas),'artist(s)_name')
-elif(opcao==4):
+    pass
+elif(opcao==9):
     rotulo_txt = "Nome do artista por inserção"
     numero_operacoes = ordenator.insercao(vetor_musicas, 'artist(s)_name')
     print_elementos(len(vetor_musicas),'artist(s)_name')
+    pass
+elif(opcao==10):
+    pass
+elif(opcao==11):
+    pass
+elif(opcao==12):
+    pass
+elif(opcao==13):
+    pass
+elif(opcao==14):
+    pass
+
 else:
     print("Entrada não identificada")
 end_time = time.time()

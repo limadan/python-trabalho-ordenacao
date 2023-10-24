@@ -31,4 +31,18 @@ class Ordenator:
                     cont+=3
         return cont
     
+    def shell_sort(self, v, chave):
+        pass
+
+    def bubble_sort(self, v, chave):
+        pass
+
+    def quick_sort(self, v, chave):
+        pass
+
+    def heap_sort(self, v, chave):
+        pass
+
+    def merge_sort(self, v, chave):
+        pass
 
