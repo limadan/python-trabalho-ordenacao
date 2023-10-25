@@ -1,16 +1,19 @@
-Nome da musica por seleção
-Tempo de execução do programa: 0.4787254333496094 segundos
-Número de operações: 462682
+Nome da musica por seleï¿½ï¿½o
+Tempo de execuï¿½ï¿½o do programa: 0.4787254333496094 segundos
+Nï¿½mero de operaï¿½ï¿½es: 462682
 
-Nome da musica por inserção
-Tempo de execução do programa: 0.5116481781005859 segundos
-Número de operações: 1132658
+Nome da musica por inserï¿½ï¿½o
+Tempo de execuï¿½ï¿½o do programa: 0.5116481781005859 segundos
+Nï¿½mero de operaï¿½ï¿½es: 1132658
 
-Nome do artista por seleção
-Tempo de execução do programa: 0.5335328578948975 segundos
-Número de operações: 462243
+Nome do artista por seleï¿½ï¿½o
+Tempo de execuï¿½ï¿½o do programa: 0.5335328578948975 segundos
+Nï¿½mero de operaï¿½ï¿½es: 462243
 
-Nome do artista por inserção
-Tempo de execução do programa: 0.599529504776001 segundos
-Número de operações: 1159853
+Nome do artista por inserï¿½ï¿½o
+Tempo de execuï¿½ï¿½o do programa: 0.599529504776001 segundos
+Nï¿½mero de operaï¿½ï¿½es: 1159853
+Nome da musica por shell
+Tempo de execução do programa: 0.5824410915374756 segundos
+Número de operações: 819508
 

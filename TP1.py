@@ -70,8 +70,14 @@ elif(opcao==2):
     numero_operacoes = ordenator.insercao(vetor_musicas, 'track_name')
     print_elementos(len(vetor_musicas),'track_name')
 elif(opcao==3):
+    rotulo_txt = "Nome da musica por bolha"
+    numero_operacoes = ordenator.bubble_sort(vetor_musicas, 'track_name')
+    print_elementos(len(vetor_musicas),'track_name')
     pass
 elif(opcao==4):
+    rotulo_txt = "Nome da musica por shell"
+    numero_operacoes = ordenator.shell_sort(vetor_musicas, 'track_name')
+    print_elementos(len(vetor_musicas),'track_name')
     pass
 elif(opcao==5):
     pass

@@ -32,10 +32,39 @@ class Ordenator:
         return cont
     
     def shell_sort(self, v, chave):
-        pass
+        cont=0
+        salto = 1
+        salto = salto * 2 + 1
+        while(salto < len(v)):
+             salto = salto * 2 + 1
+        salto//=2
+        while salto!=1:
+            for i in range(salto, len(v)):
+                cont+=1
+                for j in range(i, 0, -salto):
+                    cont+=1
+                    if v[j].compara(v[j - salto], chave) < 0:
+                        aux = v[j]
+                        v[j] = v[j - salto]
+                        v[j - salto] = aux
+                        cont+=3
+            salto//=2
+        cont_insercao = self.insercao(v, chave)
+
+        return cont + cont_insercao
 
     def bubble_sort(self, v, chave):
-        pass
+        cont=0
+        for i in range(len(v)):
+            cont+=1
+            for j in range(i, len(v), 1):
+                cont+=1
+                if v[j].compara(v[i], chave) < 0:
+                    aux = v[j]
+                    v[j] = v[i]
+                    v[i] = aux
+                    cont=+3
+        return cont
 
     def quick_sort(self, v, chave):
         pass
