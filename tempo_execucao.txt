@@ -17,3 +17,7 @@ Nome da musica por shell
 Tempo de execução do programa: 0.5824410915374756 segundos
 Número de operações: 819508
 
+
+Tempo de execução do programa: 0.2992093563079834 segundos
+Número de operações: 0
+

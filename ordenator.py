@@ -72,28 +72,29 @@ class Ordenator:
         pivo = ((index_direita - index_esquerda )//2) + index_esquerda
         
         
-        while i!=j:
-            if(v[index_esquerda].compara(v[pivo], chave) < 0 
+        while i<=j:
+            if(v[i].compara(v[pivo], chave) < 0 
                 and 
-                v[index_direita].compara(v[pivo], chave) > 0):
+                v[j].compara(v[pivo], chave) > 0):
                 i+=1
                 j-=1
-            elif((v[index_esquerda].compara(v[pivo], chave) < 0 
+            elif((v[i].compara(v[pivo], chave) < 0 
                     and 
-                    v[index_direita].compara(v[pivo], chave) < 0)):
+                    v[j].compara(v[pivo], chave) < 0)):
                 i+=1
-            elif((v[index_esquerda].compara(v[pivo], chave) > 0 
+            elif((v[i].compara(v[pivo], chave) > 0 
                     and 
-                    v[index_direita].compara(v[pivo], chave) > 0)):
+                    v[j].compara(v[pivo], chave) > 0)):
                 j-=1
             else:
-                aux = v[index_esquerda]
-                v[index_esquerda] = v[index_direita]
-                v[index_direita] = aux
-
-        if(index_esquerda < j):
+                aux = v[i]
+                v[i] = v[j]
+                v[j] = aux
+                i+=1
+                j-=1
+        
+        if(index_direita - index_esquerda + 1 > 3):
             self.quick_sort(v, index_esquerda, j, chave)
-        if(i < index_direita):
             self.quick_sort(v, i, index_direita, chave)
         
         pass
