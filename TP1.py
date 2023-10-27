@@ -80,6 +80,8 @@ elif(opcao==4):
     print_elementos(len(vetor_musicas),'track_name')
     pass
 elif(opcao==5):
+    ordenator.quick_sort(vetor_musicas, 0, len(vetor_musicas) -1, 'track_name')
+    print_elementos(len(vetor_musicas),'track_name')
     pass
 elif(opcao==6):
     pass

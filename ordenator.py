@@ -66,7 +66,36 @@ class Ordenator:
                     cont=+3
         return cont
 
-    def quick_sort(self, v, chave):
+    def quick_sort(self, v, index_esquerda, index_direita, chave):
+        i = index_esquerda
+        j = index_direita
+        pivo = ((index_direita - index_esquerda )//2) + index_esquerda
+        
+        
+        while i!=j:
+            if(v[index_esquerda].compara(v[pivo], chave) < 0 
+                and 
+                v[index_direita].compara(v[pivo], chave) > 0):
+                i+=1
+                j-=1
+            elif((v[index_esquerda].compara(v[pivo], chave) < 0 
+                    and 
+                    v[index_direita].compara(v[pivo], chave) < 0)):
+                i+=1
+            elif((v[index_esquerda].compara(v[pivo], chave) > 0 
+                    and 
+                    v[index_direita].compara(v[pivo], chave) > 0)):
+                j-=1
+            else:
+                aux = v[index_esquerda]
+                v[index_esquerda] = v[index_direita]
+                v[index_direita] = aux
+
+        if(index_esquerda < j):
+            self.quick_sort(v, index_esquerda, j, chave)
+        if(i < index_direita):
+            self.quick_sort(v, i, index_direita, chave)
+        
         pass
 
     def heap_sort(self, v, chave):
