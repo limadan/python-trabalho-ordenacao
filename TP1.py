@@ -73,40 +73,51 @@ elif(opcao==3):
     rotulo_txt = "Nome da musica por bolha"
     numero_operacoes = ordenator.bubble_sort(vetor_musicas, 'track_name')
     print_elementos(len(vetor_musicas),'track_name')
-    pass
 elif(opcao==4):
     rotulo_txt = "Nome da musica por shell"
     numero_operacoes = ordenator.shell_sort(vetor_musicas, 'track_name')
     print_elementos(len(vetor_musicas),'track_name')
-    pass
 elif(opcao==5):
-    ordenator.quick_sort(vetor_musicas, 0, len(vetor_musicas) -1, 'track_name')
+    rotulo_txt = "Nome da musica por quick"
+    numero_operacoes = ordenator.quick_sort(vetor_musicas, 0, len(vetor_musicas) -1, 'track_name')
     print_elementos(len(vetor_musicas),'track_name')
     pass
 elif(opcao==6):
-    pass
+    rotulo_txt = "Nome da musica por heap"
+    numero_operacoes = ordenator.heap_sort(vetor_musicas, 'track_name')
+    print_elementos(len(vetor_musicas),'track_name')
 elif(opcao==7):
-    pass
+    rotulo_txt = "Nome da musica por merge"
+    numero_operacoes = ordenator.merge_sort(vetor_musicas, 'track_name')
+    print_elementos(len(vetor_musicas),'track_name')
 elif(opcao==8):
     rotulo_txt = "Nome do artista por seleção"
     numero_operacoes = ordenator.selecao(vetor_musicas, 'artist(s)_name')
     print_elementos(len(vetor_musicas),'artist(s)_name')
-    pass
 elif(opcao==9):
     rotulo_txt = "Nome do artista por inserção"
     numero_operacoes = ordenator.insercao(vetor_musicas, 'artist(s)_name')
     print_elementos(len(vetor_musicas),'artist(s)_name')
-    pass
 elif(opcao==10):
-    pass
+    rotulo_txt = "Nome do artista por bolha"
+    numero_operacoes = ordenator.bubble_sort(vetor_musicas, 'artist(s)_name')
+    print_elementos(len(vetor_musicas),'artist(s)_name')
 elif(opcao==11):
-    pass
+    rotulo_txt = "Nome do artista por shell"
+    numero_operacoes = ordenator.shell_sort(vetor_musicas, 'artist(s)_name')
+    print_elementos(len(vetor_musicas),'artist(s)_name')
 elif(opcao==12):
-    pass
+    rotulo_txt = "Nome do artista por quick"
+    numero_operacoes = ordenator.quick_sort(vetor_musicas, 0, len(vetor_musicas) -1, 'artist(s)_name')
+    print_elementos(len(vetor_musicas),'artist(s)_name')
 elif(opcao==13):
-    pass
+    rotulo_txt = "Nome do artista por heap"
+    numero_operacoes = ordenator.heap_sort(vetor_musicas, 'artist(s)_name')
+    print_elementos(len(vetor_musicas),'artist(s)_name')
 elif(opcao==14):
-    pass
+    rotulo_txt = "Nome do artista por merge"
+    numero_operacoes = ordenator.merge_sort(vetor_musicas, 'artist(s)_name')
+    print_elementos(len(vetor_musicas),'artist(s)_name')
 
 else:
     print("Entrada não identificada")

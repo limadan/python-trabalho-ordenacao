@@ -1,23 +1,56 @@
-Nome da musica por sele��o
-Tempo de execu��o do programa: 0.4787254333496094 segundos
-N�mero de opera��es: 462682
+Nome da musica por seleção
+Tempo de execução do programa: 0.19937896728515625 segundos
+Número de operações: 462682
 
-Nome da musica por inser��o
-Tempo de execu��o do programa: 0.5116481781005859 segundos
-N�mero de opera��es: 1132658
+Nome da musica por inserção
+Tempo de execução do programa: 0.2352590560913086 segundos
+Número de operações: 1132658
 
-Nome do artista por sele��o
-Tempo de execu��o do programa: 0.5335328578948975 segundos
-N�mero de opera��es: 462243
+Nome da musica por bolha
+Tempo de execução do programa: 0.3854660987854004 segundos
+Número de operações: 1583647
 
-Nome do artista por inser��o
-Tempo de execu��o do programa: 0.599529504776001 segundos
-N�mero de opera��es: 1159853
 Nome da musica por shell
-Tempo de execu��o do programa: 0.5824410915374756 segundos
-N�mero de opera��es: 819508
+Tempo de execução do programa: 0.32074832916259766 segundos
+Número de operações: 819508
 
+Nome da musica por quick
+Tempo de execução do programa: 0.04110002517700195 segundos
+Número de operações: 31645
 
-Tempo de execu��o do programa: 0.2992093563079834 segundos
-N�mero de opera��es: 0
+Nome da musica por heap
+Tempo de execução do programa: 0.043851375579833984 segundos
+Número de operações: 75771
+
+Nome da musica por merge
+Tempo de execução do programa: 0.03683209419250488 segundos
+Número de operações: 42321
+
+Nome do artista por seleção
+Tempo de execução do programa: 0.21147704124450684 segundos
+Número de operações: 462243
+
+Nome do artista por inserção
+Tempo de execução do programa: 0.23581314086914062 segundos
+Número de operações: 1159853
+
+Nome do artista por bolha
+Tempo de execução do programa: 0.35787510871887207 segundos
+Número de operações: 1406776
+
+Nome do artista por shell
+Tempo de execução do programa: 0.32071447372436523 segundos
+Número de operações: 815758
+
+Nome do artista por quick
+Tempo de execução do programa: 0.041150808334350586 segundos
+Número de operações: 31304
+
+Nome do artista por heap
+Tempo de execução do programa: 0.04621624946594238 segundos
+Número de operações: 75415
+
+Nome do artista por merge
+Tempo de execução do programa: 0.03633570671081543 segundos
+Número de operações: 42316
 
